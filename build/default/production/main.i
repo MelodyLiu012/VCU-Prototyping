@@ -36359,9 +36359,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 122 "./mcc_generated_files/pin_manager.h"
+# 162 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 134 "./mcc_generated_files/pin_manager.h"
+# 174 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -36527,22 +36527,760 @@ void OSCILLATOR_Initialize(void);
 # 96 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 44 "main.c" 2
+# 83 "main.c"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
 
 
 
 
 
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ssize_t;
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
+
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+
+
+
+
+
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+int ungetc(int, FILE *);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
+
+
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
+
+#pragma printf_check(printf) const
+#pragma printf_check(vprintf) const
+#pragma printf_check(sprintf) const
+#pragma printf_check(snprintf) const
+#pragma printf_check(vsprintf) const
+#pragma printf_check(vsnprintf) const
+
+int printf(const char *restrict, ...);
+int fprintf(FILE *restrict, const char *restrict, ...);
+int sprintf(char *restrict, const char *restrict, ...);
+int snprintf(char *restrict, size_t, const char *restrict, ...);
+
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
+
+int scanf(const char *restrict, ...);
+int fscanf(FILE *restrict, const char *restrict, ...);
+int sscanf(const char *restrict, const char *restrict, ...);
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
+
+
+
+
+
+
+
+char *tempnam(const char *, const char *);
+# 83 "main.c" 2
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 411 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 2 3
+
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
+# 65 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 88 "main.c" 2
+# 97 "main.c"
+volatile uint8_t ERROR_TOLERANCE = 0;
+uint8_t getErrorTolerance()
+{
+    return ERROR_TOLERANCE;
+}
+
+volatile uint8_t CURTIS_HEART_BEAT_CHECK = 0;
+uint8_t getCurtisHeartBeatCheck()
+{
+    return CURTIS_HEART_BEAT_CHECK;
+}
+
+volatile uint8_t ABS_MOTOR_RPM = 0;
+uint8_t getABSMotorRPM()
+{
+    return ABS_MOTOR_RPM;
+}
+
+volatile uint8_t CAPACITOR_VOLT = 0;
+uint8_t getCapacitorVoltage()
+{
+    return CAPACITOR_VOLT;
+}
+
+volatile uint8_t ACK_RX = 0;
+uint8_t getAckRx()
+{
+    return ACK_RX;
+}
+
+volatile uint8_t THROTTLE_HIGH = 0;
+uint8_t getPedalHigh()
+{
+    return THROTTLE_HIGH;
+}
+
+volatile uint8_t THROTTLE_LOW = 0;
+uint8_t getPedalLow()
+{
+    return THROTTLE_LOW;
+}
+
+
+
+typedef enum{
+    NO_ERROR=0x0000,
+    CHARGEMODE=0x0001,
+    PACK_TEMP_OVER=0x0002,
+    STACK_FUSE_BROKEN=0x0004,
+    PACK_TEMP_UNDER=0x0008,
+    LOW_SOC = 0x0010,
+    CRITICAL_SOC = 0x0020,
+    IMBALANCE = 0x0040,
+    COM_FAILURE = 0x0080,
+    NEG_CONT_CLOSED = 0x0100,
+    POS_CONT_CLOSED = 0x0200,
+    ISO_FAULT = 0x0400,
+    CELL_VOLT_OVER = 0x0800,
+    CELL_VOLT_UNDER = 0x1000,
+    CHARGE_HAULT = 0x2000,
+    FULL_ = 0x4000,
+    PRECHARGE_CLOSED = 0x8000
+}BMS_STATUS;
+
+void print(char * message) {
+    uint8_t i;
+    for (i = 0; i < strlen(message); i++) {
+        UART1_Write(message[i]);
+    }
+    UART1_Write("    ");
+}
+
+uint8_t Drive_Read(void)
+{
+    return PORTBbits.RB6;
+}
+
+uint8_t HV_Read(void)
+{
+    return PORTBbits.RB1;
+}
+
+
+
+
+
+
+volatile double THROTTLE_MULTIPLIER = 1;
+
+
+volatile uint8_t PACK_TEMP = 0;
+volatile int32_t CURRENT = 0;
+volatile int ERROR_NODE;
+volatile int ERROR_IDX;
+volatile uint32_t voltage = 0;
+uint8_t charge = 0;
+
+const double THROTTLE_MAP[8] = { 95, 71, 59, 47, 35, 23, 11, 5 };
+
+
+
+
+
+int SOC_LUT[240] = {
+    0, 5, 13, 22, 31, 39,
+    48, 57, 67, 76, 86,
+    90, 106, 117, 127, 138,
+    150, 162, 174, 186, 199,
+    212, 226, 241, 256, 271,
+    288, 205, 324, 345, 364,
+    386, 410, 436, 465, 497,
+    534, 577, 629, 695, 780,
+    881, 972, 1044, 1103, 1157,
+    1206, 1253, 1299, 1344, 1389,
+    1434, 1479, 1527, 1576, 1628,
+    1682, 1738, 1798, 1859, 1924,
+    1992, 2062, 2134, 2208, 2281,
+    2424, 2492, 2557, 2620, 2681,
+    2743, 2804, 2868, 2903, 3003,
+    3078, 3161, 3253, 3354, 3467,
+    3589, 3720, 3851, 3976, 4092,
+    4200, 4303, 4404, 4504, 4603,
+    4700, 4792, 4878, 4958, 5032,
+    5101, 5166, 5228, 5289, 5347,
+    5405, 5462, 5518, 5573, 5628,
+    5680, 5731, 5780, 5826, 5869,
+    5911, 5951, 5988, 6024, 6059,
+    6092, 6124, 6156, 6187, 6217,
+    6247, 6278, 6308, 6337, 6368,
+    6398, 6428, 6459, 6491, 6523,
+    6556, 6590, 6625, 6660, 6696,
+    6733, 6770, 6808, 6846, 6884,
+    6923, 6961, 7000, 7039, 7077,
+    7115, 7153, 7191, 7228, 7266,
+    7303, 7340, 7376, 7413, 7449,
+    7484, 7520, 7555, 7590, 7625,
+    7659, 7694, 7728, 7762, 7796,
+    7830, 7864, 7898, 7932, 7966,
+    8000, 8034, 8068, 8102, 8136,
+    8170, 8204, 8238, 8272, 8306,
+    8340, 8373, 8406, 8440, 8472,
+    8505, 8538, 8570, 8602, 8632,
+    8666, 8697, 8729, 8760, 8791,
+    8822, 8853, 8884, 8915, 8945,
+    8976, 9006, 9036, 9067, 9097,
+    9127, 9157, 9186, 9216, 9245,
+    9275, 9304, 9333, 9362, 9390,
+    9419, 9447, 9475, 9503, 9531,
+    9559, 9586, 9613, 9640, 9647,
+    9693, 9720, 9746, 9772, 9797,
+    9823, 9848, 9873, 9898, 9923,
+    9947, 9971, 9995, 100000
+};
+
+uint16_t curr_voltage = 0;
+
+int firstStart = 0;
+int firstLV = 0;
+int firstHV = 0;
+int firstDrive = 0;
+# 304 "main.c"
+typedef enum
+{
+ Startup,
+ LV,
+ Precharging,
+ HV_Enabled,
+ Drive,
+ Fault
+
+}Dash_State;
+
+typedef enum
+{
+ OK,
+ fromLV,
+ fromPrecharging,
+ fromHV_Enabled,
+ fromDrive,
+    fromFault,
+    fromBMS,
+    nodeFailure
+
+}Error_State;
+# 336 "main.c"
+static uint32_t ReadSwSwitch(void);
+
+
+uint8_t HVSwitch = (0u);
+uint8_t DriveSwitch = (0u);
+
+
+
+volatile uint32_t pedalOK = 0;
+
+volatile int previous_state = -1;
+
+volatile BMS_STATUS bms_status = NO_ERROR;
+# 370 "main.c"
 void main(void)
 {
 
     SYSTEM_Initialize();
-# 64 "main.c"
-    while (1)
+
+    print("STart");
+
+
+
+
+    Dash_State state = Startup;
+    Error_State error_state = OK;
+
+
+    uint8_t value=0;
+    int8_t direction=1;
+
+
+    volatile uint32_t PrechargingTimeCount = 0;
+    uint32_t DriveTimeCount = 0;
+# 404 "main.c"
+    bms_status = NO_ERROR;
+    int bms_error;
+    int faulted = 0;
+
+
+    for(;;)
     {
 
 
-        UART1_Write('h');
-        UART1_Write('\n');
-        _delay((unsigned long)((500)*(1000000/4000.0)));
+
+
+        if (pedalOK > 100)
+        {
+
+            state = Fault;
+            error_state = nodeFailure;
+        }
+
+        if(bms_status != NO_ERROR && state != Startup) {
+            state = Fault;
+            error_state = fromBMS;
+            if(!faulted)
+                bms_error = bms_status;
+        }
+
+
+        switch(state)
+        {
+
+
+            case Startup:
+
+                if(firstStart == 0) {
+
+
+                     print("START");
+                } else {
+
+                }
+
+
+
+
+
+
+                print("LED: RAINBOW");
+
+
+
+
+
+                print("Buzzer: off");
+                _delay((unsigned long)((50)*(1000000/4000.0)));
+
+
+                print("Buzzer: on");
+
+                state = LV;
+
+            break;
+
+            case LV:
+                if(firstLV == 0) {
+
+
+
+                    print("LV");
+                    firstLV = 1;
+                } else {
+                    charge = SOC_LUT[(voltage - 93400) / 100] / 100;
+
+                    print("Displaying data");
+                }
+# 492 "main.c"
+                print("Buzzer: off");
+
+
+
+
+
+
+                print("LED: YELLOW");
+
+                if (Drive_Read())
+                {
+                    state = Fault;
+                    error_state = fromLV;
+                    break;
+                }
+
+                if (HV_Read())
+                {
+                    state = Precharging;
+                    break;
+                }
+
+            break;
+
+            case Precharging:
+
+
+
+                print("PRCHGE");
+# 531 "main.c"
+                print("LED: MAGENTA");
+
+                PrechargingTimeCount = 0;
+
+                while(1)
+                {
+
+
+                    uint8_t CapacitorVolt = getCapacitorVoltage();
+
+                    if(CapacitorVolt >= 0x16)
+                    {
+                        state = HV_Enabled;
+                        break;
+                    }
+
+
+                    PrechargingTimeCount++;
+
+                    if (PrechargingTimeCount == 10)
+                    {
+                        state = Fault;
+                        error_state = fromPrecharging;
+                        break;
+                    }
+
+
+                }
+
+            break;
+
+            case HV_Enabled:
+                if(firstHV == 0) {
+
+
+
+                    print("HV");
+                    firstHV = 1;
+                } else {
+                    charge = SOC_LUT[(voltage - 93400) / 100] / 100;
+
+                    print("Displaying data");
+                }
+# 587 "main.c"
+                print("LED: BLUE");
+# 597 "main.c"
+                print("Buzzer: off");
+
+
+
+
+                if (Drive_Read())
+                {
+
+                    if(getErrorTolerance() == 0)
+                    {
+
+
+
+
+                        print("Buzzer: on");
+                        _delay((unsigned long)((500)*(1000000/4000.0)));
+                        print("Buzzer: off");
+
+                        state = Drive;
+                        break;
+                    }
+                    else
+                    {
+                        state = Fault;
+                        error_state = fromHV_Enabled;
+                        break;
+                    }
+                }
+
+
+                if(!HV_Read() | (getCapacitorVoltage() < 0x16))
+                {
+                    state = LV;
+                    DriveTimeCount = 0;
+                    break;
+                }
+
+            break;
+
+         case Drive:
+                if(firstDrive == 0) {
+
+
+
+                    print("DRIVE");
+                    firstDrive = 1;
+                } else {
+
+                    if(CURRENT < 2500) {
+                        charge = SOC_LUT[(voltage - 93400) / 100] / 100;
+                    }
+
+                    print("Display data");
+                }
+# 659 "main.c"
+                print("LED: GREEN");
+
+                uint8_t ACK = 0xFF;
+
+                DriveTimeCount++;
+                if (DriveTimeCount > 100)
+                {
+                    DriveTimeCount = 0;
+                    ACK = getAckRx();
+                }
+
+                uint8_t ABS_Motor_RPM = getABSMotorRPM();
+
+                uint16_t Throttle_Total = 0x0;
+                Throttle_Total |= getPedalHigh() << 8;
+                Throttle_Total |= getPedalLow();
+                Throttle_Total = (double)Throttle_Total * THROTTLE_MULTIPLIER;
+
+                uint8_t Throttle_High = Throttle_Total >> 8;
+                uint8_t Throttle_Low = Throttle_Total & 0x00FF;
+# 689 "main.c"
+                if (!HV_Read()) {
+
+
+                    state = LV;
+                }
+
+
+                if (!Drive_Read()) {
+                    state = HV_Enabled;
+
+
+                }
+                if ((ACK != 0xFF) |
+                    (!getCurtisHeartBeatCheck()))
+                {
+
+                    state = Fault;
+                    error_state = fromDrive;
+                    DriveTimeCount = 0;
+                    break;
+                }
+
+                previous_state = Drive;
+            break;
+
+         case Fault:
+# 730 "main.c"
+                print("LED: RED");
+                _delay((unsigned long)((1000)*(1000000/4000.0)));
+                print("LED: OFF");
+                _delay((unsigned long)((1000)*(1000000/4000.0)));
+
+
+                print("Buzzer: off");
+# 747 "main.c"
+                if(error_state == fromBMS) {
+
+
+
+
+
+                    print("error state: fromBMS");
+                }
+
+
+                if(error_state == fromLV)
+                {
+                    if(!Drive_Read())
+                    {
+                        state = LV;
+                        error_state = OK;
+                    }
+                }
+                else if (error_state == fromPrecharging)
+                {
+                    if(!Drive_Read() && !HV_Read())
+                    {
+                        state = LV;
+                        error_state = OK;
+                    }
+                }
+                else if (error_state == fromHV_Enabled)
+                {
+                    if(!Drive_Read())
+                    {
+                        state = HV_Enabled;
+                        error_state = OK;
+                    }
+                }
+                else if (error_state == fromDrive)
+                {
+
+
+
+
+
+                    if((getCurtisHeartBeatCheck()))
+                    {
+                        state = LV;
+                        error_state = OK;
+                    }
+                    else if(0xFF == getAckRx())
+                    {
+                        state = HV_Enabled;
+                        error_state = OK;
+                    }
+                }
+                else if (error_state == nodeFailure)
+                {
+                    state = Fault;
+                }
+                else if (error_state == fromBMS)
+                {
+                    state = Fault;
+                }
+            break;
+
+            default:
+
+
+
+                print("LED: OFF");
+
+        }
+
+
+
     }
 }
