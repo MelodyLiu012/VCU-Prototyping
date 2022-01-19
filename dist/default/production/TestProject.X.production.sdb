@@ -3,56 +3,28 @@
 [d edition pro ]
 [d chip 18F26K83 ]
 [d frameptr 16353 ]
-"348 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
-[e E23141 . `ui
-NO_ERROR 0
-CHARGEMODE 1
-PACK_TEMP_OVER 2
-STACK_FUSE_BROKEN 4
-PACK_TEMP_UNDER 8
-LOW_SOC 16
-CRITICAL_SOC 32
-IMBALANCE 64
-COM_FAILURE 128
-NEG_CONT_CLOSED 256
-POS_CONT_CLOSED 512
-ISO_FAULT 1024
-CELL_VOLT_OVER 2048
-CELL_VOLT_UNDER 4096
-CHARGE_HAULT 8192
-FULL_ 16384
-PRECHARGE_CLOSED -32768
+"65 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
+[e E22612 . `uc
+channel_ANB2 10
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
 ]
-"380
-[e E23179 . `uc
-Startup 0
-LV 1
-Precharging 2
-HV_Enabled 3
-Drive 4
-Fault 5
+"113 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/adcc.c
+[e E22597 . `uc
+channel_ANB2 10
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
 ]
-"381
-[e E23187 . `uc
-OK 0
-fromLV 1
-fromPrecharging 2
-fromHV_Enabled 3
-fromDrive 4
-fromFault 5
-fromBMS 6
-nodeFailure 7
-]
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
-[v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
@@ -69,41 +41,23 @@ nodeFailure 7
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"98 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
-[v _getErrorTolerance getErrorTolerance `(uc  1 e 1 0 ]
-"104
-[v _getCurtisHeartBeatCheck getCurtisHeartBeatCheck `(uc  1 e 1 0 ]
-"110
-[v _getABSMotorRPM getABSMotorRPM `(uc  1 e 1 0 ]
-"116
-[v _getCapacitorVoltage getCapacitorVoltage `(uc  1 e 1 0 ]
-"122
-[v _getAckRx getAckRx `(uc  1 e 1 0 ]
-"128
-[v _getPedalHigh getPedalHigh `(uc  1 e 1 0 ]
-"134
-[v _getPedalLow getPedalLow `(uc  1 e 1 0 ]
-"161
-[v _print print `(v  1 e 1 0 ]
-"169
-[v _Drive_Read Drive_Read `(uc  1 e 1 0 ]
-"174
-[v _HV_Read HV_Read `(uc  1 e 1 0 ]
-"370
+"49 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
 [v _main main `(v  1 e 1 0 ]
+"62 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"113
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
 "50 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"58
+"59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"72
+"73
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -135,22 +89,7 @@ nodeFailure 7
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "4676
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S93 . 1 `uc 1 RB0 1 0 :1:0 
-`uc 1 RB1 1 0 :1:1 
-`uc 1 RB2 1 0 :1:2 
-`uc 1 RB3 1 0 :1:3 
-`uc 1 RB4 1 0 :1:4 
-`uc 1 RB5 1 0 :1:5 
-`uc 1 RB6 1 0 :1:6 
-`uc 1 RB7 1 0 :1:7 
-]
-"4843
-[s S102 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 CCP2_PA2 1 0 :1:3 
-]
-[u S105 . 1 `S93 1 . 1 0 `S102 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES105  1 e 1 @16331 ]
-[s S320 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[s S144 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -160,13 +99,13 @@ nodeFailure 7
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "26128
-[s S329 . 1 `uc 1 . 1 0 :1:0 
+[s S153 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S334 . 1 `S320 1 . 1 0 `S329 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES334  1 e 1 @14755 ]
+[u S158 . 1 `S144 1 . 1 0 `S153 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES158  1 e 1 @14755 ]
 "26578
 [v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
 "26655
@@ -229,6 +168,8 @@ nodeFailure 7
 [v _WPUE WPUE `VEuc  1 e 1 @14977 ]
 "31562
 [v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"32286
+[v _ADACTPPS ADACTPPS `VEuc  1 e 1 @15071 ]
 "32446
 [v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15079 ]
 "47071
@@ -249,34 +190,34 @@ nodeFailure 7
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "47328
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S352 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S176 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 ]
 "47359
-[s S356 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S180 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
 "47359
-[s S362 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S186 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 ]
 "47359
-[s S366 . 1 `uc 1 MODE 1 0 :4:0 
+[s S190 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
 "47359
-[u S372 . 1 `S352 1 . 1 0 `S356 1 . 1 0 `S362 1 . 1 0 `S366 1 . 1 0 ]
+[u S196 . 1 `S176 1 . 1 0 `S180 1 . 1 0 `S186 1 . 1 0 `S190 1 . 1 0 ]
 "47359
 "47359
-[v _U1CON0bits U1CON0bits `VES372  1 e 1 @15858 ]
+[v _U1CON0bits U1CON0bits `VES196  1 e 1 @15858 ]
 "47444
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
 "47524
@@ -291,7 +232,7 @@ nodeFailure 7
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
 "47899
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S398 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S222 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -301,7 +242,7 @@ nodeFailure 7
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "47926
-[s S407 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S231 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -311,112 +252,270 @@ nodeFailure 7
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
 "47926
-[u S416 . 1 `S398 1 . 1 0 `S407 1 . 1 0 ]
+[u S240 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
 "47926
 "47926
-[v _U1ERRIRbits U1ERRIRbits `VES416  1 e 1 @15865 ]
+[v _U1ERRIRbits U1ERRIRbits `VES240  1 e 1 @15865 ]
 "48011
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
-"97 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
-[v _ERROR_TOLERANCE ERROR_TOLERANCE `VEuc  1 e 1 0 ]
-"103
-[v _CURTIS_HEART_BEAT_CHECK CURTIS_HEART_BEAT_CHECK `VEuc  1 e 1 0 ]
-"109
-[v _ABS_MOTOR_RPM ABS_MOTOR_RPM `VEuc  1 e 1 0 ]
-"115
-[v _CAPACITOR_VOLT CAPACITOR_VOLT `VEuc  1 e 1 0 ]
-"121
-[v _ACK_RX ACK_RX `VEuc  1 e 1 0 ]
-"127
-[v _THROTTLE_HIGH THROTTLE_HIGH `VEuc  1 e 1 0 ]
-"133
-[v _THROTTLE_LOW THROTTLE_LOW `VEuc  1 e 1 0 ]
-"184
-[v _THROTTLE_MULTIPLIER THROTTLE_MULTIPLIER `VEd  1 e 4 0 ]
-"187
-[v _PACK_TEMP PACK_TEMP `VEuc  1 e 1 0 ]
-"188
-[v _CURRENT CURRENT `VEl  1 e 4 0 ]
-"189
-[v _ERROR_NODE ERROR_NODE `VEi  1 e 2 0 ]
-"190
-[v _ERROR_IDX ERROR_IDX `VEi  1 e 2 0 ]
-"191
-[v _voltage voltage `VEul  1 e 4 0 ]
-"192
-[v _charge charge `uc  1 e 1 0 ]
-"200
-[v _SOC_LUT SOC_LUT `[240]i  1 e 480 0 ]
-"254
-[v _firstLV firstLV `i  1 e 2 0 ]
-"255
-[v _firstHV firstHV `i  1 e 2 0 ]
-"256
-[v _firstDrive firstDrive `i  1 e 2 0 ]
-"344
-[v _pedalOK pedalOK `VEul  1 e 4 0 ]
-"346
-[v _previous_state previous_state `VEi  1 e 2 0 ]
-"348
-[v _bms_status bms_status `VEE23141  1 e 2 0 ]
-[s S264 . 1 `uc 1 perr 1 0 :1:0 
+"49169
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @16094 ]
+"49297
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @16095 ]
+"49432
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @16096 ]
+"49560
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @16097 ]
+"49695
+[v _ADERRL ADERRL `VEuc  1 e 1 @16098 ]
+"49823
+[v _ADERRH ADERRH `VEuc  1 e 1 @16099 ]
+"49958
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @16100 ]
+"50086
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @16101 ]
+"50221
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @16102 ]
+"50349
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @16103 ]
+"50486
+[v _ADACCL ADACCL `VEuc  1 e 1 @16104 ]
+"50614
+[v _ADACCH ADACCH `VEuc  1 e 1 @16105 ]
+"50742
+[v _ADACCU ADACCU `VEuc  1 e 1 @16106 ]
+"50870
+[v _ADCNT ADCNT `VEuc  1 e 1 @16107 ]
+"50998
+[v _ADRPT ADRPT `VEuc  1 e 1 @16108 ]
+"51133
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @16109 ]
+"51261
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @16110 ]
+"51396
+[v _ADRESL ADRESL `VEuc  1 e 1 @16111 ]
+"51524
+[v _ADRESH ADRESH `VEuc  1 e 1 @16112 ]
+"51644
+[v _ADPCH ADPCH `VEuc  1 e 1 @16113 ]
+"51755
+[v _ADACQL ADACQL `VEuc  1 e 1 @16115 ]
+"51883
+[v _ADACQH ADACQH `VEuc  1 e 1 @16116 ]
+"51975
+[v _ADCAP ADCAP `VEuc  1 e 1 @16117 ]
+"52074
+[v _ADPREL ADPREL `VEuc  1 e 1 @16118 ]
+"52202
+[v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
+"52294
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
+[s S382 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"52338
+[s S390 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"52338
+[s S398 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+`uc 1 FM1 1 0 :1:3 
+]
+"52338
+[s S403 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+"52338
+[s S405 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+"52338
+[s S410 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+"52338
+[u S413 . 1 `S382 1 . 1 0 `S390 1 . 1 0 `S398 1 . 1 0 `S403 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 ]
+"52338
+"52338
+[v _ADCON0bits ADCON0bits `VES413  1 e 1 @16120 ]
+"52433
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
+[s S648 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"52458
+[s S654 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"52458
+[s S660 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+"52458
+[u S663 . 1 `S648 1 . 1 0 `S654 1 . 1 0 `S660 1 . 1 0 ]
+"52458
+"52458
+[v _ADCON1bits ADCON1bits `VES663  1 e 1 @16121 ]
+"52508
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
+[s S509 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"52556
+[s S514 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"52556
+[s S523 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+"52556
+[s S527 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+"52556
+[s S535 . 1 `uc 1 MD 1 0 :3:0 
+]
+"52556
+[s S537 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+"52556
+[s S541 . 1 `uc 1 ADMODE 1 0 :3:0 
+]
+"52556
+[u S543 . 1 `S509 1 . 1 0 `S514 1 . 1 0 `S523 1 . 1 0 `S527 1 . 1 0 `S535 1 . 1 0 `S537 1 . 1 0 `S541 1 . 1 0 ]
+"52556
+"52556
+[v _ADCON2bits ADCON2bits `VES543  1 e 1 @16122 ]
+"52686
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
+[s S454 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"52721
+[s S458 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"52721
+[s S466 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+"52721
+[s S470 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+"52721
+[u S478 . 1 `S454 1 . 1 0 `S458 1 . 1 0 `S466 1 . 1 0 `S470 1 . 1 0 ]
+"52721
+"52721
+[v _ADCON3bits ADCON3bits `VES478  1 e 1 @16123 ]
+"52816
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
+[s S588 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 OV 1 0 :1:7 
+]
+"52851
+[s S595 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"52851
+[s S604 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+"52851
+[s S608 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+"52851
+[u S612 . 1 `S588 1 . 1 0 `S595 1 . 1 0 `S604 1 . 1 0 `S608 1 . 1 0 ]
+"52851
+"52851
+[v _ADSTATbits ADSTATbits `VES612  1 e 1 @16124 ]
+"52941
+[v _ADREF ADREF `VEuc  1 e 1 @16125 ]
+"53023
+[v _ADACT ADACT `VEuc  1 e 1 @16126 ]
+"53115
+[v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
+[s S88 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "53 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/uart1.c
-[u S269 . 1 `S264 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxLastError uart1RxLastError `VES269  1 s 1 uart1RxLastError ]
+[u S93 . 1 `S88 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxLastError uart1RxLastError `VES93  1 s 1 uart1RxLastError ]
 "58
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"370 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
+"49 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"539
-[v main@CapacitorVolt CapacitorVolt `uc  1 a 1 57 ]
-"672
-[v main@Throttle_Total Throttle_Total `us  1 a 2 63 ]
-"661
-[v main@ACK ACK `uc  1 a 1 58 ]
-"678
-[v main@Throttle_Low Throttle_Low `uc  1 a 1 54 ]
-"677
-[v main@Throttle_High Throttle_High `uc  1 a 1 53 ]
-"670
-[v main@ABS_Motor_RPM ABS_Motor_RPM `uc  1 a 1 52 ]
-"389
-[v main@DriveTimeCount DriveTimeCount `ul  1 a 4 59 ]
-"388
-[v main@PrechargingTimeCount PrechargingTimeCount `VEul  1 a 4 66 ]
-"406
-[v main@faulted faulted `i  1 a 2 55 ]
-"381
-[v main@error_state error_state `E23187  1 a 1 70 ]
-"380
-[v main@state state `E23179  1 a 1 65 ]
-"820
-} 0
-"161
-[v _print print `(v  1 e 1 0 ]
-{
-"162
-[v print@i i `uc  1 a 1 8 ]
-"161
-[v print@message message `*.32uc  1 p 2 4 ]
-"167
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-{
-"7
-[v strlen@a a `*.32Cuc  1 a 2 2 ]
-"5
-[v strlen@s s `*.32Cuc  1 p 2 0 ]
-"12
+"79
+[v main@x x `us  1 a 2 4 ]
+"85
 } 0
 "170 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
@@ -426,120 +525,10 @@ nodeFailure 7
 [v UART1_Write@txData txData `uc  1 a 1 0 ]
 "177
 } 0
-"134 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
-[v _getPedalLow getPedalLow `(uc  1 e 1 0 ]
-{
-"137
-} 0
-"128
-[v _getPedalHigh getPedalHigh `(uc  1 e 1 0 ]
-{
-"131
-} 0
-"98
-[v _getErrorTolerance getErrorTolerance `(uc  1 e 1 0 ]
-{
-"101
-} 0
-"104
-[v _getCurtisHeartBeatCheck getCurtisHeartBeatCheck `(uc  1 e 1 0 ]
-{
-"107
-} 0
-"116
-[v _getCapacitorVoltage getCapacitorVoltage `(uc  1 e 1 0 ]
-{
-"119
-} 0
-"122
-[v _getAckRx getAckRx `(uc  1 e 1 0 ]
-{
-"125
-} 0
-"110
-[v _getABSMotorRPM getABSMotorRPM `(uc  1 e 1 0 ]
-{
-"113
-} 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
-} 0
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
-[v ___lldiv __lldiv `(ul  1 e 4 0 ]
-{
-"10
-[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
-"11
-[v ___lldiv@counter counter `uc  1 a 1 12 ]
-"7
-[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
-[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
-"30
-} 0
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 48 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 47 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 39 ]
-"70
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S804 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S809 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S812 . 4 `l 1 i 4 0 `d 1 f 4 0 `S804 1 fAsBytes 4 0 `S809 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S812  1 a 4 33 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S880 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S883 . 2 `s 1 i 2 0 `us 1 n 2 0 `S880 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S883  1 a 2 37 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 32 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 31 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 26 ]
-"8
-[v ___flmul@b b `d  1 p 4 14 ]
-[v ___flmul@a a `d  1 p 4 18 ]
-"205
-} 0
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
-"10
-[v ___awdiv@quotient quotient `i  1 a 2 19 ]
-"11
-[v ___awdiv@sign sign `uc  1 a 1 18 ]
-[v ___awdiv@counter counter `uc  1 a 1 17 ]
-"7
-[v ___awdiv@dividend dividend `i  1 p 2 13 ]
-[v ___awdiv@divisor divisor `i  1 p 2 15 ]
-"41
-} 0
 "50 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"56
+"57
 } 0
 "66 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
@@ -564,28 +553,37 @@ nodeFailure 7
 [v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "200
 } 0
-"72 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
+"73 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"90
+"91
 } 0
 "55 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"117
+"118
 } 0
-"58 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
+"59 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"70
+"71
 } 0
-"174 C:\Users\Melody\MPLABXProjects\TestProject.X\main.c
-[v _HV_Read HV_Read `(uc  1 e 1 0 ]
+"62 C:\Users\Melody\MPLABXProjects\TestProject.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
-"177
+"111
 } 0
-"169
-[v _Drive_Read Drive_Read `(uc  1 e 1 0 ]
+"113
+[v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
 {
-"172
+[v ADCC_StartConversion@channel channel `E22597  1 a 1 wreg ]
+[v ADCC_StartConversion@channel channel `E22597  1 a 1 wreg ]
+"116
+[v ADCC_StartConversion@channel channel `E22597  1 a 1 0 ]
+"123
+} 0
+"131
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
+{
+"135
 } 0

@@ -112,6 +112,7 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
+    ADACTPPS = 0x0A;   //RB2->ADCC:ADACT;    
     RC6PPS = 0x13;   //RC6->UART1:TX1;    
     U1RXPPS = 0x17;   //RC7->UART1:RX1;    
 }

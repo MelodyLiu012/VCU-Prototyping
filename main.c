@@ -60,17 +60,28 @@
 //
 //    // Disable the Global Interrupts
 //    //INTERRUPT_GlobalInterruptDisable();
-//
+//    
+//    ADCC_Initialize();
+//    ADCC_StartConversion(channel_ANB2);
+//    
 //    while (1)
 //    {
 //        // Add your application code
-//        if(IO_RB1_GetValue())
-//        {
-//        UART1_Write('h');
-//        UART1_Write('\n');
-//        __delay_ms(500);
-//        }
+////        if(IO_RB1_GetValue())
+////        {
+////        UART1_Write('h');
+////        UART1_Write('\n');
+////        __delay_ms(500);
+////        }
+//        
+//        
+////        uint16_t x = ADCC_GetSingleConversion(channel_ANB2);
+//        uint16_t x = ADCC_GetConversionResult();
+//        UART1_Write((uint8_t)x);
+//        
 //    }
+//    
+//    
 //}
 /**
  End of File
@@ -112,10 +123,11 @@ uint8_t getABSMotorRPM()
     return ABS_MOTOR_RPM;
 }
     
-volatile uint8_t CAPACITOR_VOLT = 0;
+//volatile uint8_t CAPACITOR_VOLT = 0;
 uint8_t getCapacitorVoltage()
 {
-    return CAPACITOR_VOLT;
+    uint16_t CAPACITOR_VOLT = ADCC_GetConversionResult();
+    return (uint8_t)CAPACITOR_VOLT;
 }  
     
 volatile uint8_t ACK_RX = 0;
@@ -163,7 +175,7 @@ void print(char * message) {
     for (i = 0; i < strlen(message); i++) {
         UART1_Write(message[i]);
     }
-    UART1_Write("    ");
+    UART1_Write("\n");
 }
 
 uint8_t Drive_Read(void)
@@ -372,7 +384,8 @@ void main(void)
     // added for testing on pic -----------------------------------
     SYSTEM_Initialize();
     
-    print("STart");
+    ADCC_Initialize();
+    ADCC_StartConversion(channel_ANB2);
     
     
 //    EEPROM_1_Start();
@@ -842,7 +855,7 @@ void main(void)
 //    /* Set the isrFlag */
 //    //isrFlag = 1u;    
 //
-//    /* Acknowledges receipt of new message */
+//    /* Acknowledges receipt of new message 
 //    CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_0);
 //
 //    ///* Clear Receive Message flag */

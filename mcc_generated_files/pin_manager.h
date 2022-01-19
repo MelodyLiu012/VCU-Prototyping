@@ -105,6 +105,26 @@
 #define IO_RB1_SetAnalogMode()      do { ANSELBbits.ANSELB1 = 1; } while(0)
 #define IO_RB1_SetDigitalMode()     do { ANSELBbits.ANSELB1 = 0; } while(0)
 
+// get/set channel_ANB2 aliases
+#define channel_ANB2_TRIS                 TRISBbits.TRISB2
+#define channel_ANB2_LAT                  LATBbits.LATB2
+#define channel_ANB2_PORT                 PORTBbits.RB2
+#define channel_ANB2_WPU                  WPUBbits.WPUB2
+#define channel_ANB2_OD                   ODCONBbits.ODCB2
+#define channel_ANB2_ANS                  ANSELBbits.ANSELB2
+#define channel_ANB2_SetHigh()            do { LATBbits.LATB2 = 1; } while(0)
+#define channel_ANB2_SetLow()             do { LATBbits.LATB2 = 0; } while(0)
+#define channel_ANB2_Toggle()             do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0)
+#define channel_ANB2_GetValue()           PORTBbits.RB2
+#define channel_ANB2_SetDigitalInput()    do { TRISBbits.TRISB2 = 1; } while(0)
+#define channel_ANB2_SetDigitalOutput()   do { TRISBbits.TRISB2 = 0; } while(0)
+#define channel_ANB2_SetPullup()          do { WPUBbits.WPUB2 = 1; } while(0)
+#define channel_ANB2_ResetPullup()        do { WPUBbits.WPUB2 = 0; } while(0)
+#define channel_ANB2_SetPushPull()        do { ODCONBbits.ODCB2 = 0; } while(0)
+#define channel_ANB2_SetOpenDrain()       do { ODCONBbits.ODCB2 = 1; } while(0)
+#define channel_ANB2_SetAnalogMode()      do { ANSELBbits.ANSELB2 = 1; } while(0)
+#define channel_ANB2_SetDigitalMode()     do { ANSELBbits.ANSELB2 = 0; } while(0)
+
 // get/set IO_RB6 aliases
 #define IO_RB6_TRIS                 TRISBbits.TRISB6
 #define IO_RB6_LAT                  LATBbits.LATB6
